@@ -17,30 +17,30 @@ use ReflectionClass;
 /**
  * Class MappingFactory.
  */
-class MappingFactory extends \NilPortugues\Api\Mapping\MappingFactory
-{
+class MappingFactory extends \NilPortugues\Api\Mapping\MappingFactory{
+
     /**
      * @var array
      */
     protected static $eloquentClasses = [];
 
-    /**
-     * @param string $className
-     *
-     * @return array
-     */
-    protected static function getClassProperties($className)
-    {
-        if (\class_exists($className, true)) {
-            $reflection = new ReflectionClass($className);
-            $value = $reflection->newInstanceWithoutConstructor();
+	/**
+	 * @param string $className
+	 *
+	 * @return array
+	 * @throws \ReflectionException
+	 */
+    protected static function getClassProperties($className){
+        if($className !== Model::class && \class_exists($className,true)){
+			$reflection = new ReflectionClass($className);
+			$value = $reflection->newInstanceWithoutConstructor();
 
-            if (\is_subclass_of($value, Model::class, true)) {
-                $attributes = Schema::getColumnListing($value->getTable());
+			if (\is_subclass_of($value, Model::class, true)) {
+				$attributes = Schema::getColumnListing($value->getTable());
 
-                self::$eloquentClasses[$className] = $attributes;
-            }
-        }
+				self::$eloquentClasses[$className] = $attributes;
+			}
+		}
 
         return (!empty(self::$eloquentClasses[$className])) ? self::$eloquentClasses[$className] : parent::getClassProperties($className);
     }
