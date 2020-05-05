@@ -14,6 +14,7 @@ namespace NilPortugues\Laravel\JsonApi;
 use Illuminate\Support\ServiceProvider;
 use NilPortugues\Laravel\JsonApi\Providers\Laravel51Provider;
 use NilPortugues\Laravel\JsonApi\Providers\Laravel52Provider;
+use NilPortugues\Laravel\JsonApi\Providers\Laravel6Provider;
 
 class LaravelJsonApiServiceProvider extends ServiceProvider
 {
