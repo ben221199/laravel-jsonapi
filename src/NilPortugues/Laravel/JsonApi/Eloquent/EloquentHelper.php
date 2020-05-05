@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Eloquent;
+namespace NilPortugues\Laravel\JsonApi\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use NilPortugues\Api\JsonApi\Http\Factory\RequestFactory;
-use NilPortugues\Laravel5\JsonApi\JsonApiSerializer;
+use NilPortugues\Laravel\JsonApi\JsonApiSerializer;
 
 /**
  * Class EloquentHelper.

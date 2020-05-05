@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Mapper;
+namespace NilPortugues\Laravel\JsonApi\Mapper;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;

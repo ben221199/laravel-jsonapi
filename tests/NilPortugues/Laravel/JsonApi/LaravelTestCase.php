@@ -74,7 +74,7 @@ class LaravelTestCase extends \Illuminate\Foundation\Testing\TestCase
         $this->setUpHttpKernel($app);
         $app->register(\Illuminate\Database\DatabaseServiceProvider::class);
         $app->register(\NilPortugues\Tests\App\Providers\RouteServiceProvider::class);
-        $app->register(\NilPortugues\Laravel5\JsonApi\Laravel5JsonApiServiceProvider::class);
+        $app->register(\NilPortugues\Laravel\JsonApi\LaravelJsonApiServiceProvider::class);
 
         return $app;
     }

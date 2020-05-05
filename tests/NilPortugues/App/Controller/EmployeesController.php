@@ -16,8 +16,8 @@ use NilPortugues\Api\JsonApi\Http\Factory\RequestFactory;
 use NilPortugues\Api\JsonApi\Server\Actions\ListResource;
 use NilPortugues\Api\JsonApi\Server\Errors\Error;
 use NilPortugues\Api\JsonApi\Server\Errors\ErrorBag;
-use NilPortugues\Laravel5\JsonApi\Controller\JsonApiController;
-use NilPortugues\Laravel5\JsonApi\Eloquent\EloquentHelper;
+use NilPortugues\Laravel\JsonApi\Controller\JsonApiController;
+use NilPortugues\Laravel\JsonApi\Eloquent\EloquentHelper;
 use NilPortugues\Tests\App\Models\Employees;
 use NilPortugues\Tests\App\Models\Orders;
 

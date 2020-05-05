@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Controller;
+namespace NilPortugues\Laravel\JsonApi\Controller;
 
 use Laravel\Lumen\Application;
 use Laravel\Lumen\Routing\Controller;

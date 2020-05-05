@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Actions;
+namespace NilPortugues\Laravel\JsonApi\Actions;
 
 /**
- * Class PatchResource.
+ * Class PutResource.
  */
-class PatchResource extends \NilPortugues\Api\JsonApi\Server\Actions\PatchResource
+class PutResource extends \NilPortugues\Api\JsonApi\Server\Actions\PutResource
 {
     /**
      * @param \Exception $e

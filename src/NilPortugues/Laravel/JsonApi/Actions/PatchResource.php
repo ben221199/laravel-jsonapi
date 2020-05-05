@@ -8,23 +8,21 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Actions;
-
-use Exception;
+namespace NilPortugues\Laravel\JsonApi\Actions;
 
 /**
- * Class GetResource.
+ * Class PatchResource.
  */
-class GetResource extends \NilPortugues\Api\JsonApi\Server\Actions\GetResource
+class PatchResource extends \NilPortugues\Api\JsonApi\Server\Actions\PatchResource
 {
     /**
-     * @param Exception $e
+     * @param \Exception $e
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws Exception
+     * @throws \Exception
      */
-    public function getErrorResponse(Exception $e)
+    public function getErrorResponse(\Exception $e)
     {
         if (config('app.debug')) {
             throw $e;

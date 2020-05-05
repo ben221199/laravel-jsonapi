@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi;
+namespace NilPortugues\Laravel\JsonApi;
 
 use NilPortugues\Serializer\Drivers\Eloquent\EloquentDriver;
 

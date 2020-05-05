@@ -1,7 +1,7 @@
 {
-    "name": "nilportugues/laravel5-json-api",
+    "name": "nilportugues/laravel-json-api",
     "type": "library",
-    "description": "Laravel 5 JSON API Transformer Package",
+    "description": "Laravel JSON API Transformer Package",
     "keywords": ["laravel", "laravel5", "lumen", "json", "api", "jsonapi", "serializer", "transformer", "psr7", "response"],
     "homepage": "http://nilportugues.com",
     "license": "MIT",
@@ -12,16 +12,29 @@
             "role": "Project Lead Developer"
         }
     ],
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "ben221199/serializer-eloquent2",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/ben221199/serializer-eloquent-driver.git",
+                    "type": "git",
+                    "reference":"master"
+                },
+                "autoload":{
+                    "psr-4": {
+                        "NilPortugues\\Serializer\\Drivers\\Eloquent\\": "src/"
+                    }
+                }
+            }
+        }
+    ],
     "require": {
         "nilportugues/json-api": "^2.4",
         "symfony/psr-http-message-bridge": "~0.1",
-        "nilportugues/serializer-eloquent": "~1.0"
-    },
-    "require-dev": {
-        "laravel/laravel": "5.*",
-        "laravel/lumen": "^5.2",
-        "phpunit/phpunit": "4.*",
-        "friendsofphp/php-cs-fixer": "^1.10"
+        "ben221199/serializer-eloquent": "*"
     },
     "autoload": {
         "psr-4": {

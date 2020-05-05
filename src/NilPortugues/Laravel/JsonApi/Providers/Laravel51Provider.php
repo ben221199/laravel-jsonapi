@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Providers;
+namespace NilPortugues\Laravel\JsonApi\Providers;
 
 use Illuminate\Support\Facades\Cache;
 use NilPortugues\Api\JsonApi\JsonApiTransformer;
 use NilPortugues\Api\Mapping\Mapping;
-use NilPortugues\Laravel5\JsonApi\JsonApiSerializer;
-use NilPortugues\Laravel5\JsonApi\Mapper\Mapper;
+use NilPortugues\Laravel\JsonApi\JsonApiSerializer;
+use NilPortugues\Laravel\JsonApi\Mapper\Mapper;
 use ReflectionClass;
 
 /**

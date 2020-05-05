@@ -8,30 +8,28 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Actions;
+namespace NilPortugues\Laravel\JsonApi\Actions;
 
 use Exception;
-use NilPortugues\Api\JsonApi\Server\Errors\ErrorBag;
 
 /**
- * Class CreateResource.
+ * Class GetResource.
  */
-class CreateResource extends \NilPortugues\Api\JsonApi\Server\Actions\CreateResource
+class GetResource extends \NilPortugues\Api\JsonApi\Server\Actions\GetResource
 {
     /**
      * @param Exception $e
-     * @param ErrorBag  $errorBag
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws Exception
      */
-    public function getErrorResponse(Exception $e, ErrorBag $errorBag)
+    public function getErrorResponse(Exception $e)
     {
         if (config('app.debug')) {
             throw $e;
         }
 
-        return parent::getErrorResponse($e, $errorBag);
+        return parent::getErrorResponse($e);
     }
 }

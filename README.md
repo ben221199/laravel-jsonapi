@@ -7,12 +7,12 @@
 [![License](https://poser.pugx.org/nilportugues/laravel5-json-api/license)](https://packagist.org/packages/nilportugues/laravel5-json-api) 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/nilportugues)
 
-*Compatible with Laravel 5.0, 5.1 & 5.2*
+*Compatible with Laravel 5.0, 5.1, 5.2 & 6*
 
 - Package provides a full implementation of the **[JSON API](https://github.com/json-api/json-api)** specification, and is **featured** on the official site!
 - A **JSON API Transformer** that will allow you to convert any mapped object into a valid JSON API resource.
 - Controller boilerplate to write a fully compiliant **JSON API Server** using your **exisiting Eloquent Models**.
-- Works for Laravel 5 and Lumen frameworks.
+- Works for Laravel 5 (and 6) and Lumen frameworks.
 
 ---
 

@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi\Controller;
+namespace NilPortugues\Laravel\JsonApi\Controller;
 
 use Carbon\Carbon;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use NilPortugues\Api\JsonApi\Http\Factory\RequestFactory;
 use NilPortugues\Api\JsonApi\Http\Response\ResourceNotFound;
-use NilPortugues\Laravel5\JsonApi\Actions\CreateResource;
-use NilPortugues\Laravel5\JsonApi\Actions\DeleteResource;
-use NilPortugues\Laravel5\JsonApi\Actions\GetResource;
-use NilPortugues\Laravel5\JsonApi\Actions\ListResource;
+use NilPortugues\Laravel\JsonApi\Actions\CreateResource;
+use NilPortugues\Laravel\JsonApi\Actions\DeleteResource;
+use NilPortugues\Laravel\JsonApi\Actions\GetResource;
+use NilPortugues\Laravel\JsonApi\Actions\ListResource;
 use Symfony\Component\HttpFoundation\Response;
 
 /**

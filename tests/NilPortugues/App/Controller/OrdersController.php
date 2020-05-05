@@ -10,7 +10,7 @@
 
 namespace NilPortugues\Tests\App\Controller;
 
-use NilPortugues\Laravel5\JsonApi\Controller\JsonApiController;
+use NilPortugues\Laravel\JsonApi\Controller\JsonApiController;
 use NilPortugues\Tests\App\Models\Orders;
 
 class OrdersController extends JsonApiController

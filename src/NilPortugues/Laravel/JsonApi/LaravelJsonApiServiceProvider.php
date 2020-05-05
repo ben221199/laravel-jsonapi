@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Laravel5\JsonApi;
+namespace NilPortugues\Laravel\JsonApi;
 
 use Illuminate\Support\ServiceProvider;
-use NilPortugues\Laravel5\JsonApi\Providers\Laravel51Provider;
-use NilPortugues\Laravel5\JsonApi\Providers\Laravel52Provider;
+use NilPortugues\Laravel\JsonApi\Providers\Laravel51Provider;
+use NilPortugues\Laravel\JsonApi\Providers\Laravel52Provider;
 
-class Laravel5JsonApiServiceProvider extends ServiceProvider
+class LaravelJsonApiServiceProvider extends ServiceProvider
 {
     const LARAVEL_APPLICATION = 'Illuminate\Foundation\Application';
     const PATH = '/../../../config/jsonapi.php';
@@ -56,9 +56,12 @@ class Laravel5JsonApiServiceProvider extends ServiceProvider
             case false !== strpos($version, '5.2.'):
                 $provider = new Laravel52Provider();
                 break;
+			case false !== strpos($version, '6.'):
+				$provider = new Laravel6Provider();
+				break;
             default:
                 throw new \RuntimeException(
-                    sprintf('Laravel version %s is not supported. Please use the 5.1 for the time being', $version)
+                    sprintf('LaravelOld version %s is not supported. Please use the 5.1 for the time being', $version)
                 );
                 break;
         }
